@@ -1,0 +1,55 @@
+package prototipo;
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class codigo1 {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ler = new Scanner(System.in);
+		DecimalFormat div = new DecimalFormat("0.00");
+		
+		int e;
+		double x,y,res;
+
+		System.out.println("Olá, mundo!");
+		System.out.println("O que você deseja fazer?");
+		System.out.println("1 - Somar");
+		System.out.println("2 - Subtrair");
+		System.out.println("3 - Multiplicar");
+		System.out.println("4 - Dividir");
+			e = ler.nextInt();
+			System.out.println("Certo! Digite o primero número: ");
+			x = ler.nextDouble();
+			System.out.println("Digite o segundo número: ");
+			y = ler.nextDouble();
+		if (e == 1) {
+			res = x + y;
+			System.out.println("O resultado é: "+res);
+		}
+		
+		else if (e == 2) {
+			res = x - y;
+			System.out.println("O resultado é: "+res);
+		}
+		else if (e == 3) {
+			res = x * y;
+			System.out.println("O resultado é: "+res);
+		}
+		else if (e == 4) {
+			if(y == 0) {
+				System.out.println("Não é possível dividir por zero");
+			}
+			else {
+				res = x/y;
+				System.out.println("Oresultado da divisão é: "+div.format(res));
+			}
+		}
+		else {
+			System.out.println("Nenhuma opção foi escolhida...");
+		}
+	}
+
+}

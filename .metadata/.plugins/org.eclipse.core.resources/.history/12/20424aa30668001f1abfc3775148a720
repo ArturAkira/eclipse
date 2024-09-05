@@ -1,0 +1,19 @@
+package prototipo;
+
+import java.util.Scanner;
+
+public class codigo1 {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ler = new Scanner(System.in);
+		
+		int x,y;
+
+		System.out.println("Olá, mundo");
+		System.out.println("Digite um número: ");
+			x = ler.nextInt();
+	}
+
+}

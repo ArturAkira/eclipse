@@ -1,0 +1,16 @@
+package prototipo;
+
+ 
+
+public class codigo1 {
+	
+	int x,y;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Olá, mundo");
+		System.out.println("Digite um número: ");
+			x = nextint();
+	}
+
+}
